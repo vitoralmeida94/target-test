@@ -6,3 +6,8 @@
 /TargetTest.API/TargetTest.Application/obj
 /TargetTest.API/TargetTest.Core/obj
 /TargetTest.API/TargetTest.Infrastructure/obj
+/TargetTest.API/TargetTest.API/bin/Debug/net5.0
+/TargetTest.API/TargetTest.Application/bin/Debug/net5.0
+/TargetTest.API/TargetTest.Core/bin/Debug/net5.0
+/TargetTest.API/TargetTest.Infrastructure/bin/Debug/net5.0
+/TargetTest.API/.vs/TargetTest.API/config
