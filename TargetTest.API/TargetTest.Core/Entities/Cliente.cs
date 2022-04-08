@@ -7,14 +7,14 @@ namespace TargetTest.Core.Entities
 {
     public partial class Cliente
     {
-        public int Id { get; set; }
-        public string NomeCompleto { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public string Cpf { get; set; }
-        public decimal Renda { get; set; }
-        public int PlanoId { get; set; }
+        public int Id { get; private set; }
+        public string NomeCompleto { get; private set; }
+        public DateTime DataNascimento { get; private set; }
+        public string Cpf { get; private set; }
+        public decimal Renda { get; private set; }
+        public int PlanoId { get; private set; }
 
-        public virtual Plano Plano { get; set; }
-        public virtual Endereco Endereco { get; set; }
+        public virtual Plano Plano { get; private set; }
+        public virtual Endereco Endereco { get; private set; }
     }
 }
