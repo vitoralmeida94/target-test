@@ -25,22 +25,26 @@ namespace TargetTest.Infrastructure.Persistence.Repositories
 
         public List<Cliente> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Clientes.ToList();
         }
 
         public Cliente GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Clientes.FirstOrDefault(x => x.Id == id);
         }
 
         public Cliente Insert(Cliente cliente)
         {
-            throw new NotImplementedException();
+            _context.Clientes.Add(cliente);
+            _context.SaveChanges();
+            return cliente;
         }
 
         public Cliente Update(Cliente cliente)
         {
-            throw new NotImplementedException();
+            _context.Clientes.Update(cliente);
+            _context.SaveChanges();
+            return cliente;
         }
     }
 }
