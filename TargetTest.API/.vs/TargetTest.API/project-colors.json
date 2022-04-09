@@ -20,7 +20,12 @@
       "ProjectGuid": "94c0a081-20c5-4af3-950c-8e96c516be47",
       "DisplayName": "TargetTest.Infrastructure",
       "ColorIndex": 3
+    },
+    "adc40685-1913-4194-981f-f20443f6d423": {
+      "ProjectGuid": "adc40685-1913-4194-981f-f20443f6d423",
+      "DisplayName": "TargetTest.Tests",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
