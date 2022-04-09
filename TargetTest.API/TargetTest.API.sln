@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetTest.API", "TargetTest.API\TargetTest.API.csproj", "{9D98B884-DA4E-4771-8E6B-F4718B65555C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TargetTest.API", "TargetTest.API\TargetTest.API.csproj", "{9D98B884-DA4E-4771-8E6B-F4718B65555C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetTest.Application", "TargetTest.Application\TargetTest.Application.csproj", "{B3E903EF-5020-4B41-9265-0862B57249B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TargetTest.Application", "TargetTest.Application\TargetTest.Application.csproj", "{B3E903EF-5020-4B41-9265-0862B57249B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetTest.Core", "TargetTest.Core\TargetTest.Core.csproj", "{38E19899-B33A-4278-857E-29B5105EB498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TargetTest.Core", "TargetTest.Core\TargetTest.Core.csproj", "{38E19899-B33A-4278-857E-29B5105EB498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetTest.Infrastructure", "TargetTest.Infrastructure\TargetTest.Infrastructure.csproj", "{94C0A081-20C5-4AF3-950C-8E96C516BE47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TargetTest.Infrastructure", "TargetTest.Infrastructure\TargetTest.Infrastructure.csproj", "{94C0A081-20C5-4AF3-950C-8E96C516BE47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetTest.Tests", "TargetTest.Tests\TargetTest.Tests.csproj", "{ADC40685-1913-4194-981F-F20443F6D423}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{94C0A081-20C5-4AF3-950C-8E96C516BE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C0A081-20C5-4AF3-950C-8E96C516BE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C0A081-20C5-4AF3-950C-8E96C516BE47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC40685-1913-4194-981F-F20443F6D423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC40685-1913-4194-981F-F20443F6D423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC40685-1913-4194-981F-F20443F6D423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC40685-1913-4194-981F-F20443F6D423}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

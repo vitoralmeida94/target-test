@@ -11,3 +11,6 @@
 /TargetTest.API/TargetTest.Core/bin/Debug/net5.0
 /TargetTest.API/TargetTest.Infrastructure/bin/Debug/net5.0
 /TargetTest.API/.vs/TargetTest.API/config
+/TargetTest.API/TargetTest.Tests/bin/Debug/net5.0
+/TargetTest.API/TargetTest.Tests/obj/Debug/net5.0
+/TargetTest.API/TargetTest.Tests/obj
