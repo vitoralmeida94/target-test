@@ -1,0 +1,15 @@
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\bin\Debug\net5.0\TargetTest.Infrastructure.deps.json
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\bin\Debug\net5.0\TargetTest.Infrastructure.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\bin\Debug\net5.0\ref\TargetTest.Infrastructure.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\bin\Debug\net5.0\TargetTest.Infrastructure.pdb
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.AssemblyInfo.cs
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\ref\TargetTest.Infrastructure.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.pdb
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\bin\Debug\net5.0\TargetTest.Core.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\bin\Debug\net5.0\TargetTest.Core.pdb
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Infrastructure\obj\Debug\net5.0\TargetTest.Infrastructure.csproj.CopyComplete

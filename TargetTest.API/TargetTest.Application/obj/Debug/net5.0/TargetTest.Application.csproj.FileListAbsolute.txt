@@ -1,0 +1,12 @@
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\bin\Debug\net5.0\TargetTest.Application.deps.json
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\bin\Debug\net5.0\TargetTest.Application.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\bin\Debug\net5.0\ref\TargetTest.Application.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\bin\Debug\net5.0\TargetTest.Application.pdb
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\TargetTest.Application.csproj.AssemblyReference.cache
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\TargetTest.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\TargetTest.Application.AssemblyInfoInputs.cache
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\TargetTest.Application.AssemblyInfo.cs
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\TargetTest.Application.csproj.CoreCompileInputs.cache
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\TargetTest.Application.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\ref\TargetTest.Application.dll
+C:\Users\vitor\OneDrive\Documentos\Vitor\target-test\TargetTest.API\TargetTest.Application\obj\Debug\net5.0\TargetTest.Application.pdb
