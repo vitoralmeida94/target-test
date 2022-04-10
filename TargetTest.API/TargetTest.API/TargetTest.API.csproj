@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Filters\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TargetTest.Application\TargetTest.Application.csproj" />
     <ProjectReference Include="..\TargetTest.Core\TargetTest.Core.csproj" />
     <ProjectReference Include="..\TargetTest.Infrastructure\TargetTest.Infrastructure.csproj" />
