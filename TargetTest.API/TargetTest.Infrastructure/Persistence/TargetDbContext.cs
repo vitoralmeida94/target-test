@@ -18,13 +18,14 @@ namespace TargetTest.Infrastructe.Persistence
 
         public virtual DbSet<Cliente> Clientes { get; set; }
         public virtual DbSet<Endereco> Enderecos { get; set; }
+        public virtual DbSet<Log> Logs { get; set; }
         public virtual DbSet<Plano> Planos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=TargetInvestimentoDb;User Id=sa;Password=123456;Trusted_Connection=True");
+                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-U6UMEV7\\SQLEXPRESS;Database=TargetInvestimentoDb;User Id=sa;Password=123456;Trusted_Connection=True");
             }
         }
 
@@ -43,6 +44,8 @@ namespace TargetTest.Infrastructe.Persistence
                     .HasColumnName("CPF")
                     .IsFixedLength(true);
 
+                entity.Property(e => e.DataCriacao).HasColumnType("date");
+
                 entity.Property(e => e.DataNascimento).HasColumnType("date");
 
                 entity.Property(e => e.NomeCompleto)
@@ -55,7 +58,6 @@ namespace TargetTest.Infrastructe.Persistence
                 entity.HasOne(d => d.Plano)
                     .WithMany(p => p.Clientes)
                     .HasForeignKey(d => d.PlanoId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Cliente_Plano");
             });
 
@@ -106,6 +108,17 @@ namespace TargetTest.Infrastructe.Persistence
                     .HasForeignKey<Endereco>(d => d.ClientId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Endereco_Cliente");
+            });
+
+            modelBuilder.Entity<Log>(entity =>
+            {
+                entity.ToTable("Log");
+
+                entity.Property(e => e.Data).HasColumnType("datetime");
+
+                entity.Property(e => e.Mensagem)
+                    .IsRequired()
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Plano>(entity =>

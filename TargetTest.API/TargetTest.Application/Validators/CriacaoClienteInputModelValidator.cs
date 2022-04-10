@@ -75,23 +75,19 @@ namespace TargetTest.Application.Validators
 
             RuleFor(p => p.Renda)
                 .NotNull()
-                .NotEmpty()
-                .GreaterThan(-0.1m)
+                //.NotEmpty()
+                .GreaterThanOrEqualTo(0)
                 .WithMessage("Renda precisa ser preenchida e sendo um número igual ou superior a zero.");
             
             RuleFor(p => p.CPF)
               .NotNull()
               .NotEmpty()
-              .MinimumLength(11)
-              .MaximumLength(11)
               .Must(ValidaCPF)
               .WithMessage("CPF tem tamanho máximo e mínimo de 11 caracteres, sendo somentes números.");
 
             RuleFor(p => p.CEP)
               .NotNull()
               .NotEmpty()
-              .MinimumLength(8)
-              .MaximumLength(8)
               .Must(ValidaCEP)
               .WithMessage("CEP tem tamanho máximo e mínimo de 8 caracteres, sendo somentes números.");
         }

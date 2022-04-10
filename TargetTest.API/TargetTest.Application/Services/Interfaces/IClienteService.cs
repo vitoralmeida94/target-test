@@ -12,10 +12,14 @@ namespace TargetTest.Application.Services.Interfaces
     {
         ClienteCriadoViewModel Inserir(CriacaoClienteInputModel inputModel);
 
-        List<ClienteViewModel> ListaPelaRenda(ListaClientePorRendaInputModel inputModel);
+        List<ClienteViewModel> ListaPelaRenda(decimal renda);
 
         List<ClienteViewModel> ListaClientesPorPeriodo(ListaPeriodoClienteInputModel inputModel);
 
+        void AplicarVIP(int clienteId);
 
+        bool AtualizaEnderecoCliente(int id,AtualizaEnderecoInputModel inputModel);
+
+        ClienteEnderecoViewModel ListaEnderecoCliente(int clienteId);
     }
 }

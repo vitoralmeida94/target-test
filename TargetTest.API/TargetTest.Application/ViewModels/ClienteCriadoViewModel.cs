@@ -13,7 +13,7 @@ namespace TargetTest.Application.ViewModels
             Id = id;
             NomeCompleto = nomeCompleto;
             Cadastrado = cadastrado;
-            OferecerPlanoVip = renda > 6000;
+            OferecerPlanoVip = renda > 6000m;
         }
 
         public int Id { get; private set; }

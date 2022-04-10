@@ -1465,7 +1465,8 @@
       },
       "TargetTest.Application/1.0.0": {
         "dependencies": {
-          "FluentValidation.AspNetCore": "9.5.1"
+          "FluentValidation.AspNetCore": "9.5.1",
+          "TargetTest.Infrastructure": "1.0.0"
         },
         "runtime": {
           "TargetTest.Application.dll": {}

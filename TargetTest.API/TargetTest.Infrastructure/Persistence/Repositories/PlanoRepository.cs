@@ -45,5 +45,10 @@ namespace TargetTest.Infrastructure.Persistence.Repositories
             _context.SaveChanges();
             return plano;
         }
+
+        public Plano GetPlanoVIP()
+        {
+            return _context.Planos.First(x => x.Nome == "VIP");
+        }
     }
 }

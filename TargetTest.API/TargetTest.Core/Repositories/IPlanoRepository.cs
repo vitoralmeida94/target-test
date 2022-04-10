@@ -18,5 +18,7 @@ namespace TargetTest.Core.Repositories
         Plano GetById(int id);
 
         List<Plano> GetAll();
+
+        Plano GetPlanoVIP();
     }
 }

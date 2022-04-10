@@ -14,8 +14,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TargetTest.API.Filters;
+using TargetTest.API.Middleware;
+using TargetTest.Application.Services.Implemetations;
+using TargetTest.Application.Services.Interfaces;
 using TargetTest.Application.Validators;
+using TargetTest.Core.Repositories;
 using TargetTest.Infrastructe.Persistence;
+using TargetTest.Infrastructure.Persistence.Repositories;
 
 namespace TargetTest.API
 {
@@ -38,6 +43,13 @@ namespace TargetTest.API
             services.AddDbContext<TargetDbContext>(
                 options => options.UseSqlServer(connectionString));
 
+            services.AddScoped<IClienteService, ClienteService>();
+
+            services.AddTransient<IClienteRepository, ClienteRepository>();
+            services.AddTransient<IPlanoRepository, PlanoRepository>();
+            services.AddTransient<IEnderecoRepository, EnderecoRepository>();
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TargetTest.API", Version = "v1" });
@@ -53,6 +65,8 @@ namespace TargetTest.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TargetTest.API v1"));
             }
+
+            app.UseMiddleware<ApiKeyMiddleware>();
 
             app.UseHttpsRedirection();
 

@@ -27,7 +27,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\vitor\\OneDrive\\Documentos\\Vitor\\target-test\\TargetTest.API\\TargetTest.Infrastructure\\TargetTest.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\vitor\\OneDrive\\Documentos\\Vitor\\target-test\\TargetTest.API\\TargetTest.Infrastructure\\TargetTest.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
