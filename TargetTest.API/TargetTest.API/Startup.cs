@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TargetTest.Application.Validators;
 using TargetTest.Infrastructe.Persistence;
 
 namespace TargetTest.API
@@ -28,10 +30,14 @@ namespace TargetTest.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CriacaoClienteInputModelValidator>());
+
             var connectionString = Configuration.GetConnectionString("TargetInvestimentoDb");
             services.AddDbContext<TargetDbContext>(
                 options => options.UseSqlServer(connectionString));
+
+
 
             services.AddSwaggerGen(c =>
             {

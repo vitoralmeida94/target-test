@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Validators\" />
-    <Folder Include="Queries\" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.1" />
   </ItemGroup>
 
 </Project>
