@@ -47,7 +47,8 @@ namespace TargetTest.API
 
             services.AddScoped<IClienteService, ClienteService>();
             services.AddScoped<IIbgeService, IbgeService>();
-            
+            services.AddScoped<ILogService, LogService>();
+
             services.AddTransient<IClienteRepository, ClienteRepository>();
             services.AddTransient<IPlanoRepository, PlanoRepository>();
             services.AddTransient<IEnderecoRepository, EnderecoRepository>();

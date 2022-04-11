@@ -2,6 +2,7 @@
 using System;
 using TargetTest.Application.InputModels;
 using TargetTest.Application.Services.Interfaces;
+using TargetTest.Core.Entities;
 using TargetTest.Core.Enums;
 
 namespace TargetTest.API.Controllers
@@ -10,9 +11,11 @@ namespace TargetTest.API.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly IClienteService _clienteService;
-        public ClienteController(IClienteService clienteService)
+        private readonly ILogService _logService;
+        public ClienteController(IClienteService clienteService, ILogService logService)
         {
             _clienteService = clienteService;
+            _logService = logService;
         }
 
         [HttpPost]
@@ -25,6 +28,7 @@ namespace TargetTest.API.Controllers
             }
             catch (System.Exception ex)
             {
+                _logService.Registra(new Log(ex.Message));
                 return StatusCode(500, "Ocorreu um erro interno.");
             }
         }
@@ -39,6 +43,7 @@ namespace TargetTest.API.Controllers
             }
             catch (System.Exception ex)
             {
+                _logService.Registra(new Log(ex.Message));
                 return StatusCode(500, "Ocorreu um erro interno.");
             }
         }
@@ -58,6 +63,7 @@ namespace TargetTest.API.Controllers
             }
             catch (Exception ex)
             {
+                _logService.Registra(new Log(ex.Message));
                 return StatusCode(500, "Ocorreu um erro interno.");
             }
         }
@@ -77,6 +83,7 @@ namespace TargetTest.API.Controllers
             }
             catch (Exception ex)
             {
+                _logService.Registra(new Log(ex.Message));
                 return StatusCode(500, "Ocorreu um erro interno.");
             }
         }
@@ -98,6 +105,7 @@ namespace TargetTest.API.Controllers
             }
             catch (Exception ex)
             {
+                _logService.Registra(new Log(ex.Message));
                 return StatusCode(500, "Ocorreu um erro interno.");
             }
         }
@@ -121,6 +129,7 @@ namespace TargetTest.API.Controllers
             }
             catch (Exception ex)
             {
+                _logService.Registra(new Log(ex.Message));
                 return StatusCode(500, "Ocorreu um erro interno.");
             }
         }
@@ -135,6 +144,7 @@ namespace TargetTest.API.Controllers
             }
             catch (Exception ex)
             {
+                _logService.Registra(new Log(ex.Message));
                 return StatusCode(500, "Ocorreu um erro interno.");
             }
         }
