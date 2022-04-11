@@ -15,11 +15,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using TargetTest.API.Filters;
 using TargetTest.API.Middleware;
+using TargetTest.Application.ExternalServices.Implemetations;
 using TargetTest.Application.Services.Implemetations;
 using TargetTest.Application.Services.Interfaces;
 using TargetTest.Application.Validators;
 using TargetTest.Core.Repositories;
 using TargetTest.Infrastructe.Persistence;
+using TargetTest.Infrastructure.Persistence.ExternalServices.Interfaces;
 using TargetTest.Infrastructure.Persistence.Repositories;
 
 namespace TargetTest.API
@@ -44,7 +46,8 @@ namespace TargetTest.API
                 options => options.UseSqlServer(connectionString));
 
             services.AddScoped<IClienteService, ClienteService>();
-
+            services.AddScoped<IIbgeService, IbgeService>();
+            
             services.AddTransient<IClienteRepository, ClienteRepository>();
             services.AddTransient<IPlanoRepository, PlanoRepository>();
             services.AddTransient<IEnderecoRepository, EnderecoRepository>();
@@ -71,6 +74,8 @@ namespace TargetTest.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

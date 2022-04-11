@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
+using TargetTest.Application.ViewModels;
 using TargetTest.Infrastructe.Persistence;
 
 namespace TargetTest.API.Controllers
@@ -14,11 +15,13 @@ namespace TargetTest.API.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public  IActionResult Get()
+
+        [HttpGet("vip")]
+        public IActionResult Get()
         {
-            var planos = _context.Planos.ToList();
-            return Ok(planos);
+            var planoVIP = _context.Planos.FirstOrDefault(x => x.Nome == "VIP");
+
+            return Ok(new PlanoViewModel(planoVIP.Nome,planoVIP.Descricao,planoVIP.Valor));
         }
     }
 }
