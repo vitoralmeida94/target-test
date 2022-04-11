@@ -6,11 +6,11 @@ using TargetTest.Infrastructe.Persistence;
 
 namespace TargetTest.API.Controllers
 {
-    [Route("api/planos")]
-    public class PlanosController : ControllerBase
+    [Route("api/plano")]
+    public class PlanoController : ControllerBase
     {
         private readonly TargetDbContext _context;
-        public PlanosController(TargetDbContext context)
+        public PlanoController(TargetDbContext context)
         {
             _context = context;
         }

@@ -37,7 +37,7 @@ namespace TargetTest.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors();
             services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CriacaoClienteInputModelValidator>());
 
@@ -70,13 +70,19 @@ namespace TargetTest.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TargetTest.API v1"));
             }
 
+            app.UseCors(options =>
+            {
+                options
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin();
+            });
+
             app.UseMiddleware<ApiKeyMiddleware>();
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseCors();
 
             app.UseAuthorization();
 

@@ -40,14 +40,10 @@ namespace TargetTest.Application.Validators
                .MaximumLength(50)
                .WithMessage("Cidade tem tamanho máximo de 50 caracteres.");
 
-            RuleFor(p => p.Complemento)
-               .NotNull()
-               .NotEmpty()
-               .WithMessage("O campo complemento é obrigatório.");
-
+            
             RuleFor(p => p.Complemento)
               .MaximumLength(20)
-              .WithMessage("Cidade tem tamanho máximo de 50 caracteres.");
+              .WithMessage("Complemento tem tamanho máximo de 50 caracteres.");
 
             RuleFor(p => p.Uf)
                .NotNull()

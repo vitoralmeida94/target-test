@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "68fc63a2-7695-48b1-989c-a3e58c5b8692",
+		"name": "Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criacao_Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeCompleto\": \"Teste 123\",\r\n  \"dataNascimento\": \"2022-04-11\",\r\n  \"cpf\": \"14866452757\",\r\n  \"logradouro\": \"Rua Teste\",\r\n  \"bairro\": \"Teste\",\r\n  \"cep\": \"89693457\",\r\n  \"cidade\": \"RIo de Janeiro\",\r\n  \"uf\": \"RJ\",\r\n  \"complemento\": \"\",\r\n  \"renda\": 2300\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44382/api/cliente/"
+			},
+			"response": []
+		},
+		{
+			"name": "AplicaVIP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/cliente/1/vip"
+			},
+			"response": []
+		},
+		{
+			"name": "BuscaPeriodo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/cliente/periodo/2022-04-10/2022-04-11"
+			},
+			"response": []
+		},
+		{
+			"name": "ListaPorRenda",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/cliente/renda/6000"
+			},
+			"response": []
+		},
+		{
+			"name": "ListaEnderecoCliente",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/cliente/1/endereco"
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizaEnderecoCliente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"logradouro\": \"RUA TESTE\",\r\n  \"complemento\": \"TESTEE\",\r\n  \"bairro\": \"MeierTeste\",\r\n  \"cep\": \"87654321\",\r\n  \"uf\": \"RJ\",\r\n  \"cidade\": \"TesteTESTERJ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:44382/api/cliente/1/endereco"
+			},
+			"response": []
+		},
+		{
+			"name": "ListaPodemVIP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/cliente/podemvip"
+			},
+			"response": []
+		},
+		{
+			"name": "ListaDetalheVIP",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/plano/vip"
+			},
+			"response": []
+		},
+		{
+			"name": "ListaEstados",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/ibge/estados"
+			},
+			"response": []
+		},
+		{
+			"name": "ListaMunicipiosPeloUF",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "pgH7QzFHJx4w46fI~5Uzi4RvtTwlEXp",
+						"type": "text"
+					}
+				],
+				"url": "https://localhost:44382/api/ibge/municipios/RJ"
+			},
+			"response": []
+		}
+	]
+}

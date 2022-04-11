@@ -9,7 +9,7 @@ namespace TargetTest.API.Middleware
     {
         private readonly RequestDelegate _next;
         private
-        const string APIKEY = "XApiKey";
+        const string APIKEY = "API-KEY";
         public ApiKeyMiddleware(RequestDelegate next)
         {
             _next = next;
