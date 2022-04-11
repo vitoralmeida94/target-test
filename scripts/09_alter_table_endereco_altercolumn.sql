@@ -1,0 +1,1 @@
+alter table Endereco alter column Complemento varchar(20) null

@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9d98b884-da4e-4771-8e6b-f4718b65555c": {
+      "ProjectGuid": "9d98b884-da4e-4771-8e6b-f4718b65555c",
+      "DisplayName": "TargetTest.API",
+      "ColorIndex": 0
+    },
+    "b3e903ef-5020-4b41-9265-0862b57249b9": {
+      "ProjectGuid": "b3e903ef-5020-4b41-9265-0862b57249b9",
+      "DisplayName": "TargetTest.Application",
+      "ColorIndex": 1
+    },
+    "38e19899-b33a-4278-857e-29b5105eb498": {
+      "ProjectGuid": "38e19899-b33a-4278-857e-29b5105eb498",
+      "DisplayName": "TargetTest.Core",
+      "ColorIndex": 2
+    },
+    "94c0a081-20c5-4af3-950c-8e96c516be47": {
+      "ProjectGuid": "94c0a081-20c5-4af3-950c-8e96c516be47",
+      "DisplayName": "TargetTest.Infrastructure",
+      "ColorIndex": 3
+    },
+    "adc40685-1913-4194-981f-f20443f6d423": {
+      "ProjectGuid": "adc40685-1913-4194-981f-f20443f6d423",
+      "DisplayName": "TargetTest.Tests",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}
