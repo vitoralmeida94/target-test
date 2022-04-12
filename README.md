@@ -18,11 +18,19 @@ Adicionar no Header da requisição => "API-KEY" com valor de "pgH7QzFHJx4w46fI~
 
 Endpoints:
 <br/>
-Cliente:
+Cliente:<br/>
 POST => api/cliente/ => Criação do cliente.<br/>
 POST => api/cliente/{id}/vip => Aplica VIP no Id do cliente.<br/>
 GET => api/cliente/periodo/{dataInicio}/{dataFim} => Lista clientes através de um período de data início e data fim.<br/>
 GET => api/cliente/renda/{valor} => Lista Clientes com valor igual ou superior.<br/>
 GET => api/cliente/{id}/endereco => Apresenta o endereço do cliente.<br/>
 PUT => api/cliente/1/endereco => Atualiza endereço do cliente.<br/>
-GET = > api/cliente/podemvip => Lista todos os clientes que podem virar VIP
+GET = > api/cliente/podemvip => Lista todos os clientes que podem virar VIP<br/>
+
+Plano:<br/>
+GET => api/plano/vip => Mostra detalhes do plano VIP.
+
+IBGE:<br/>
+GET => api/ibge/estados => Lista estados do Brasil.
+GET => api/ibge/municipios/{UF} => Lista municipios através da UF.
+Obs: Esse endpoint IBGE está consultando a API do IBGE.
