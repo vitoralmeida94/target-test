@@ -12,7 +12,7 @@ namespace TargetTest.Application.Services.Interfaces
     {
         ClienteCriadoViewModel Inserir(CriacaoClienteInputModel inputModel);
 
-        List<ClienteViewModel> ListaPelaRenda(decimal renda);
+        List<ClienteViewModel> ListaPelaRenda(decimal renda,bool listaNaoVip);
 
         List<ClienteViewModel> ListaClientesPorPeriodo(ListaPeriodoClienteInputModel inputModel);
 

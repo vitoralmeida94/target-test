@@ -7,6 +7,7 @@ using TargetTest.Application.InputModels;
 using TargetTest.Application.Services.Interfaces;
 using TargetTest.Application.ViewModels;
 using TargetTest.Core.Entities;
+using TargetTest.Core.Enums;
 using TargetTest.Core.Repositories;
 using TargetTest.Infrastructe.Persistence;
 
@@ -46,10 +47,17 @@ namespace TargetTest.Application.Services.Implemetations
             return clientesViewModel;
         }
 
-        public List<ClienteViewModel> ListaPelaRenda(decimal renda)
+        public List<ClienteViewModel> ListaPelaRenda(decimal renda,bool listaNaoVip)
         {
             var clientes = _clienteRepository.GetAll();
-            clientes = clientes.Where(x => x.Renda >= renda).ToList();
+            if (listaNaoVip)
+            {
+                clientes = clientes.Where(x => x.Renda >= renda && x.PlanoId != (int?)PlanoEnum.VIP).ToList();
+            }
+            else
+            {
+                clientes = clientes.Where(x => x.Renda >= renda).ToList();
+            }
 
             var clientesViewModel = clientes.Select(c => new ClienteViewModel(c.Id, c.NomeCompleto, c.Cpf, c.Renda)).ToList();
 

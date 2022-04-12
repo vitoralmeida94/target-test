@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace TargetTest.Core.Enums
 {
-    public enum PlanoEnum
+    public enum PlanoValorEnum
     {
-        VIP = 1
+        VIP = 6000
     }
 }

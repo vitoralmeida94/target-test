@@ -78,7 +78,7 @@ namespace TargetTest.API.Controllers
                     return BadRequest("O valor da renda não pode ser menor do que zero.");
                 }
 
-                var clientesViewModel = _clienteService.ListaPelaRenda(valor);
+                var clientesViewModel = _clienteService.ListaPelaRenda(valor,false);
                 return Ok(clientesViewModel);
             }
             catch (Exception ex)
@@ -139,7 +139,7 @@ namespace TargetTest.API.Controllers
         {
             try
             {
-                var clientesViewModel = _clienteService.ListaPelaRenda((decimal)PlanoEnum.VIP);
+                var clientesViewModel = _clienteService.ListaPelaRenda((decimal)PlanoValorEnum.VIP,true);
                 return Ok(clientesViewModel);
             }
             catch (Exception ex)
