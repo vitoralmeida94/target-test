@@ -3,7 +3,7 @@
 API construída com .NET CORE. Utilizando Entity Framework Core como ORM e o banco de dados relacional SQL Server.
 Foi utilizado o conceito de Database First ao invés do Code First, com isso, focando na geração de script das entidades via SQL Server.
 
-Entidades do projeto:
+Entidades do projeto:<br/>
 Cliente => Representa o cliente da Target;<br/>
 Endereco => Representa o endereço do cliente, isto é, uma tabela com informações do cliente;<br/>
 Plano => Representa os planos da Target.
@@ -31,6 +31,6 @@ Plano:<br/>
 GET => api/plano/vip => Mostra detalhes do plano VIP.
 
 IBGE:<br/>
-GET => api/ibge/estados => Lista estados do Brasil.
-GET => api/ibge/municipios/{UF} => Lista municipios através da UF.
+GET => api/ibge/estados => Lista estados do Brasil.<br/>
+GET => api/ibge/municipios/{UF} => Lista municipios através da UF.<br/>
 Obs: Esse endpoint IBGE está consultando a API do IBGE.
